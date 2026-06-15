@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Mangalam Matrimony</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Knewave&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="java.js" defer></script>
+    <script type="module" src="firebase-auth.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="#" aria-label="Mangalam Matrimony home">
+            <img src="https://i.ibb.co/hRQ7Wd8s/Image.png" alt="Mangalam Matrimony logo">
+            <span>Mangalam Matrimony</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Main navigation">
+            <a href="#">About</a>
+            <a href="#">Help</a>
+        </nav>
+    </header>
+
+    <main class="login-page">
+        <section class="login-card" aria-labelledby="login-title">
+            <div class="login-heading">
+                <p class="eyebrow">Welcome back</p>
+                <h1 id="login-title">Login to your account</h1>
+                <p>Continue your journey with a secure and trusted matrimony experience.</p>
+            </div>
+
+            <form id="login-form" class="login-form">
+                <label for="login-id">Email or phone number</label>
+                <input id="login-id" name="loginId" type="text" placeholder="Enter email or phone number" autocomplete="username" required>
+
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" placeholder="Enter your password" autocomplete="current-password" required>
+
+                <div class="form-row">
+                    <label class="remember-me">
+                        <input type="checkbox" name="remember">
+                        <span>Remember me</span>
+                    </label>
+                    <a href="/forgot-password">Forgot password?</a>
+                </div>
+
+                <button class="primary-button" type="submit">Login</button>
+            </form>
+
+            <div class="divider" aria-hidden="true">
+                <span></span>
+                <p>OR</p>
+                <span></span>
+            </div>
+            <button id="google-login" class="social-btn" type="button">
+                <svg class="google-logo" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path fill="#4285f4" d="M23.5 12.3c0-.8-.1-1.6-.2-2.3H12v4.4h6.5c-.3 1.4-1.1 2.7-2.3 3.5v2.9h3.8c2.2-2 3.5-5 3.5-8.5z"/>
+                    <path fill="#34a853" d="M12 24c3.2 0 5.9-1.1 7.9-2.9l-3.8-2.9c-1.1.7-2.4 1.1-4.1 1.1-3.1 0-5.7-2.1-6.7-4.9H1.4v3c1.9 3.9 5.9 6.6 10.6 6.6z"/>
+                    <path fill="#fbbc05" d="M5.3 14.4c-.2-.7-.4-1.5-.4-2.4s.1-1.6.4-2.4v-3H1.4C.5 8.2 0 10.1 0 12s.5 3.8 1.4 5.4l3.9-3z"/>
+                    <path fill="#ea4335" d="M12 4.8c1.7 0 3.3.6 4.5 1.8l3.4-3.4C17.9 1.2 15.2 0 12 0 7.3 0 3.3 2.7 1.4 6.6l3.9 3C6.3 6.9 8.9 4.8 12 4.8z"/>
+                </svg>
+                Continue with Google
+                <script type="module" src="firebase-auth.js"></script>
+            </button>
+
+            <a href="https://appleid.apple.com/" target="_blank" rel="noopener noreferrer" class="social-btn apple-btn">
+                <i class="fa-brands fa-apple"></i>
+                Continue with Apple
+            </a>
+
+            <p id="auth-message" class="form-message" role="status" aria-live="polite"></p>
+
+            <p class="account-section">
+                Don't have an account?
+                <a href="create-account.html">Create account</a>
+            </p>
+        </section>
+    </main>
+
+
+    <section class="faq-section">
+
+    <h2 class="faq-title">Why Choose Mangalam Matrimony?</h2>
+
+    <!-- Question 1 -->
+    <div class="faq">
+        <button class="faq-question">
+            Why Mangalam Matrimony?
+            <span>+</span>
+        </button>
+
+        <div class="faq-answer">
+            <p>
+                Because finding a life partner is more than just matching profiles — its about connecting hearts, families, values, and futures.
+
+At Mangalam Matrimony, we focus on genuine profiles, privacy, meaningful matches, and a trusted experience designed especially for modern Indian families.
+
+Your journey deserves more than random swipes.
+It deserves trust, compatibility, and real connections 
+            </p>
+        </div>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="faq">
+        <button class="faq-question">
+            Why choose Mangalam Matrimony over others??
+            <span>+</span>
+        </button>
+
+        <div class="faq-answer">
+            <p>
+                Because we believe marriage is not just about matching profiles — its about connecting two lives, two families, and two futures.
+
+At Mangalam Matrimony, every feature is designed to create genuine, secure, and meaningful connections. From verified profiles and privacy protection to intelligent compatibility matching, we focus on quality over quantity.
+
+Unlike ordinary platforms, we combine traditional family values with modern technology to make your partner search simple, trusted, and stress-free.
+<br>
+1] Verified & genuine profiles
+<br>
+2] Safe and private conversations
+<br>
+3] Personalized compatible matches
+<br>
+4] Family-friendly environment
+<br>
+5] Smart search based on preferences
+<br>
+6] Easy communication & interest sharing
+
+Whether you are searching for yourself or your loved ones, Mangalam Matrimony provides a trusted space where meaningful relationships begin with confide
+            </p>
+        </div>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="faq">
+        <button class="faq-question">
+            Is Mangalam Matrimony safe and trusted?
+            <span>+</span>
+        </button>
+
+        <div class="faq-answer">
+            <p>
+                Yes — your safety, privacy, and trust are our highest priorities.
+<br>
+At Mangalam Matrimony, we understand that finding a life partner is one of the most important decisions in life. Thats why we have built a secure and family-friendly platform where users can connect with confidence.
+<br>
+1] Privacy Protected
+Your personal information and conversations are kept secure and shared only according to your privacy settings.
+<br>
+2] Verified Profiles
+We actively encourage profile verification to reduce fake accounts and create a more genuine matchmaking experience.
+<br>
+3] Safe Communication
+Our platform is designed to help users interact safely with secure messaging and controlled profile visibility.
+<br>
+4] Trusted by Families
+Mangalam Matrimony is created with traditional values and modern security standards, making it suitable for both individuals and families.
+<br>
+5] Strict Monitoring
+We continuously monitor suspicious activities and take action against fake or inappropriate profiles to maintain a respectful environment.
+<br>
+We are committed to helping every user find meaningful and genuine relationships in a safe, trusted, and secure space.
+            </p>
+        </div>
+    </div>
+
+</section>
+
+    <footer class="site-footer">
+        <p>&copy; 2024 Mangalam Matrimony. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

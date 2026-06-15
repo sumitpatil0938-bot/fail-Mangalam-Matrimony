@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account | Mangalam Matrimony</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Knewave&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="java.js" defer></script>
+    <script type="module" src="firebase-auth.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="login.html" aria-label="Mangalam Matrimony home">
+            <img src="https://i.ibb.co/hRQ7Wd8s/Image.png" alt="Mangalam Matrimony logo">
+            <span>Mangalam Matrimony</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Main navigation">
+            <a href="#">About</a>
+            <a href="#">Help</a>
+        </nav>
+    </header>
+
+    <main class="login-page account-page">
+        <section class="login-card account-card" aria-labelledby="account-title">
+            <div class="login-heading">
+                <p class="eyebrow">Begin your journey</p>
+                <h1 id="account-title">Create your account</h1>
+                <p>Share a few details so Mangalam Matrimony can help you find meaningful matches.</p>
+            </div>
+
+            <form id="account-form" class="login-form account-form">
+                <div class="field-grid">
+                    <div class="field">
+                        <label for="full-name">Full name</label>
+                        <input id="full-name" name="fullName" type="text" placeholder="Enter full name" autocomplete="name">
+                    </div>
+
+                    <div class="field">
+                        <label for="gender">Gender</label>
+                        <select id="gender" name="gender">
+                            <option value="">Select gender</option>
+                            <option>Female</option>
+                            <option>Male</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="date-of-birth">Date of birth</label>
+                        <div class="date-field">
+                            <input id="date-of-birth" name="dateOfBirth" type="date">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label for="religion">Religion</label>
+                        <select id="religion" name="religion">
+                            <option value="">Select religion</option>
+                            <option>Hindu</option>
+                            <option>Muslim</option>
+                            <option>Christian</option>
+                            <option>Sikh</option>
+                            <option>Buddhist</option>
+                            <option>Jain</option>
+                            <option>Parsi</option>
+                            <option>Jewish</option>
+                            <option>Spiritual</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="mother-tongue">Mother tongue</label>
+                        <select id="mother-tongue" name="motherTongue">
+                            <option value="">Select mother tongue</option>
+                            <option>Hindi</option>
+                            <option>Marathi</option>
+                            <option>Gujarati</option>
+                            <option>Punjabi</option>
+                            <option>Bengali</option>
+                            <option>Tamil</option>
+                            <option>Telugu</option>
+                            <option>Kannada</option>
+                            <option>Malayalam</option>
+                            <option>Odia</option>
+                            <option>Assamese</option>
+                            <option>Urdu</option>
+                            <option>English</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="phone">Phone number</label>
+                        <div class="verify-row">
+                            <input id="phone" name="phone" type="tel" placeholder="Enter 10 digit phone number" autocomplete="tel">
+                            <button id="verify-phone" class="secondary-button" type="button">Verify</button>
+                        </div>
+                        <p id="phone-status" class="field-note">Phone verification is not required for authentication yet.</p>
+                    </div>
+
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" placeholder="Enter email" autocomplete="email" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="new-password">Password</label>
+                        <input id="new-password" name="password" type="password" placeholder="Create password" autocomplete="new-password" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="state">State</label>
+                        <select id="state" name="state">
+                            <option value="">Select state</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="city">District</label>
+                        <select id="city" name="city" disabled>
+                            <option value="">Select district</option>
+                        </select>
+                    </div>
+                </div>
+
+                <p id="account-message" class="form-message" role="status" aria-live="polite"></p>
+
+                <button class="primary-button" type="submit">Create account</button>
+            </form>
+
+            <p class="account-section">
+                Already have an account?
+                <a href="login.html">Login</a>
+            </p>
+        </section>
+    </main>
+</body>
+</html>
